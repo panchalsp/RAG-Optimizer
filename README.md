@@ -30,9 +30,3 @@ rag_optimizer.ipynb demonstrates a configurable Retrieval-Augmented Generation (
 	•	Retrieval Accuracy: Demonstrated ~85% top-5 retrieval accuracy on a sample corpus of technical PDFs.
 	•	Latency: Achieved average query response time <150ms using optimized FAISS indexing.
 	•	Resume Value: Showcases end-to-end AI-driven document analysis, system design, and performance tuning.
-
-⸻
-
-📜 License
-
-MIT License © 2025 Siddhi Panchal
