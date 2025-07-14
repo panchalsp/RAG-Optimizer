@@ -8,17 +8,17 @@ rag_optimizer.ipynb demonstrates a configurable Retrieval-Augmented Generation (
 
 🚀 Project Highlights
 
-	•	Comprehensive RAG Implementation: Built end-to-end pipeline—from PDF ingestion to interactive Q&A—using LangChain and OpenAI embeddings.
+•	End-to-End RAG Pipeline: Orchestrated PDF ingestion via PDFMinerLoader, semantic chunking with LangChain’s SemanticChunker, and RetrievalQA using OpenAI and HuggingFace embeddings.
 
-	•	Custom Chunking Strategies: Engineered sentence- and token-based splitting with overlap controls to maximize retrieval relevance and minimize fragmentation.
+•	Custom Chunking Strategies: Tuned min_chunk_size, overlap, and splitting methods (sentence-based, token-based) to optimize chunk relevance and context preservation.
 
-	•	Vector Database Expertise: Integrated FAISS (local), Chroma (local/cloud), and Pinecone (managed) for flexible indexing; benchmarked query latency and recall.
+•	Embedding Model Evaluation: Compared OpenAI text-embedding-3-small against HuggingFace’s all-mpnet-base-v2, analyzing trade-offs in latency and semantic retrieval quality.
 
-	•	Embedding Model Comparison: Evaluated multiple embedding backends (OpenAI text-embedding-ada-002, SentenceTransformers) to identify optimal trade-offs in speed and semantic accuracy.
+•	Vector Database Benchmarking: Indexed embeddings in FAISS (local), Chroma, and Qdrant; measured query latencies and result counts across stores to identify optimal performance.
 
-	•	Performance Tuning: Tuned chunk size, overlap ratio, and index parameters—achieved up to 20% improvement in retrieval relevance on benchmark tests.
-    
-	•	Interactive Demo: Notebook-driven interface allows stakeholders to adjust parameters and instantly observe effects on Q&A quality.
+•	Performance Analysis: Logged retrieval latencies with time.perf_counter(), visualized results in a pandas DataFrame to guide index parameter tuning.
+
+•	Interactive Notebook Demo: Provides parameterized cells for loaders, chunkers, and vector stores, enabling real-time experimentation and rapid iteration.
 
 ⸻
 
